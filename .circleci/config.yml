@@ -17,4 +17,14 @@ workflows:
       - update:
           filters:
             branches:
-              only: /^update-.*/
+              only: nightly
+  nightly:
+    triggers:
+      - schedule:
+          cron: "2 * * * *"
+          filters:
+            branches:
+              only:
+                - nightly
+    jobs:
+      - update

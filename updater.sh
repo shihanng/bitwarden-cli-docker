@@ -10,5 +10,5 @@ then
   sed -i "s|\(install -g @bitwarden/cli@\)[0-9\.]\+$|\1${NPM_VERSION}|" Dockerfile
   git add Dockerfile
   git commit -m "ci: bump to ${NPM_VERSION}"
-  git push origin master
+  git push origin nightly
 fi
