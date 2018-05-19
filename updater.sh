@@ -3,7 +3,7 @@ set -e
 set -x
 
 NPM_VERSION="$(npm view @bitwarden/cli "dist-tags".latest)"
-DOCKERHUB_VERSION="$(docker run --rm -v bw-store shihanng/bw:latest --version)"
+DOCKERHUB_VERSION="$(docker run --rm shihanng/bw:latest --version)"
 
 if [ "$NPM_VERSION" != "$DOCKERHUB_VERSION" ]
 then
