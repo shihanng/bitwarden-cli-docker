@@ -14,7 +14,7 @@ workflows:
   version: 2
   update:
     jobs:
-      - update
+      - update:
           filters:
             branches:
               only: /^update-.*/
