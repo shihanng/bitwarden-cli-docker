@@ -1,6 +1,9 @@
 Dockerized https://github.com/bitwarden/cli.
 
-[![CircleCI](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master.svg?style=shield)](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master)
+[![CircleCI](https://img.shields.io/circleci/project/github/shihanng/bitwarden-cli-docker.svg)](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/shihanng/bitwarden-cli-docker/nightly.svg)](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/nightly)
+[![Docker Automated build](https://img.shields.io/docker/automated/shihanng/bitwarden-cli-docker.svg)](https://hub.docker.com/r/shihanng/bitwarden-cli-docker/)
+[![Docker Build Status](https://img.shields.io/docker/build/shihanng/bitwarden-cli-docker.svg)](https://hub.docker.com/r/shihanng/bitwarden-cli-docker/)
 
 ## Usage
 
