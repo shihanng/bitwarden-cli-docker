@@ -34,6 +34,7 @@ workflows:
               only:
                 - nightly
     jobs:
+      - test
       - update:
           requires:
             - test
