@@ -10,16 +10,16 @@ Dockerized https://github.com/bitwarden/cli.
 Clone and build your own,
 
     $ git clone git@github.com:shihanng/bitwarden-cli-docker.git
-    $ docker build -t bw .
+    $ docker build -t <IMAGE_NAME> .
 
-Or pull from https://hub.docker.com/r/shihanng/bw/
+Or pull from https://hub.docker.com/r/shihanng/bitwarden-cli-docker/
 
-    $ docker pull shihanng/bw:latest
+    $ docker pull shihanng/bitwarden-cli-docker:latest
 
 The content in `/root/.config/Bitwarden CLI` has to be persistence so that we
 do not have to login everytime. This can be achieved with:
 
-    $ docker run -it --rm -v <SOME SAFE PLACE ON HOST>:"/root/.config/Bitwarden CLI" shihanng/bw:latest login --raw
+    $ docker run -it --rm -v <SOME_SAFE_PLACE_ON_HOST>:"/root/.config/Bitwarden CLI" shihanng/bitwarden-cli-docker:latest login
     Email address: user@example.com
     Master password: ****************
     Two-step login code for Authenticator App: 123456
@@ -35,4 +35,4 @@ do not have to login everytime. This can be achieved with:
 The environment variable `BW_SESSION` has to be passed into the container to retrieve secret from Bitwarden:
 
     $ export BW_SESSION="xxxxxxx"
-    $ docker run -it --rm -v <SOME SAFE PLACE ON HOST>:"/root/.config/Bitwarden CLI" -e BW_SESSION shihanng/bw:latest get password google.com
+    $ docker run --rm -v <SOME_SAFE_PLACE_ON_HOST>:"/root/.config/Bitwarden CLI" -e BW_SESSION shihanng/bitwarden-cli-docker:latest get password google.com
