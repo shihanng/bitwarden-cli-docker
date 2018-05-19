@@ -1,6 +1,6 @@
 Dockerized https://github.com/bitwarden/cli.
 
-[![CircleCI](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master.svg?style=sheild)](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master)
+[![CircleCI](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master.svg?style=shield)](https://circleci.com/gh/shihanng/bitwarden-cli-docker/tree/master)
 
 ## Usage
 
