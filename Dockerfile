@@ -1,6 +1,6 @@
 FROM node:10-alpine
 MAINTAINER Shi Han NG "shihanng@gmail.com"
 
-RUN npm install -g @bitwarden/cli@1.7.4
+RUN npm install -g @bitwarden/cli@1.8.0
 
 ENTRYPOINT [ "/usr/local/bin/bw" ]
